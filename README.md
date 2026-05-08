@@ -1,4 +1,4 @@
-# Jay Varshney — Portfolio
+# Jay Varshney - Portfolio
 
 A sleek, modern developer portfolio built with React and Vite, featuring smooth animations, a dark glassmorphic design, and fully responsive layouts.
 
@@ -6,14 +6,12 @@ A sleek, modern developer portfolio built with React and Vite, featuring smooth 
 
 ## ✨ Features
 
-- **Dark Glassmorphic UI** — Custom design system with glass surfaces, subtle grid backgrounds, and radial gradients
-- **Smooth Animations** — Page transitions and scroll-reveal effects powered by Framer Motion
-- **Interactive Tech Stack** — Animated skill pills with original brand-colored icons via Simple Icons CDN
-- **Project Showcase** — Hover-interactive project cards with live demo and GitHub links
-- **Scroll Progress Bar** — Animated top progress indicator that tracks page scroll
-- **Active Section Tracking** — Navbar highlights the current section using IntersectionObserver
-- **Fully Responsive** — Optimized layouts for desktop, tablet, and mobile screens
-- **SEO Optimized** — Semantic HTML, proper heading hierarchy, and meta tags
+- Dark glassmorphic UI with grid backgrounds
+- Smooth scroll-reveal animations (Framer Motion)
+- Interactive tech stack with brand-colored icons
+- Project cards with live demo & GitHub links
+- Scroll progress bar & active section tracking
+- Fully responsive & SEO friendly
 
 ---
 
