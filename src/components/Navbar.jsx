@@ -64,7 +64,7 @@ export const Navbar = () => {
         </ul>
 
         <a
-          href="https://drive.google.com/file/d/1Jt4h3p72cA5m2mcPuTg9VIKdr1IKdb7s/view?usp=sharing"
+          href="https://drive.google.com/file/d/1i6QzkKs8ve6V6tEuXFqbqGM83VDz07FM/view?usp=drive_link"
           className="group inline-flex items-center gap-2 rounded-md border border-border bg-surface/60 px-3.5 py-1.5 text-sm text-foreground transition-colors hover:border-accent/30 hover:bg-surface"
           target="_blank"
         >

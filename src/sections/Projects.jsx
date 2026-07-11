@@ -4,6 +4,15 @@ import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Verdict — AI Startup Idea Validator",
+    description:
+      "Validates startup ideas using 4 parallel AI agents grounded in live web searches, delivering a final   GO / NO-GO verdict with strengths, concerns, and an Idea Battle feature.",
+    tags: ["React", "Node.js", "Express", "PostgreSQL", "Groq API", "Tavily API", "Tailwind CSS"],
+    image: "/projects/verdict.png",
+    live: "https://verdict.vercel.app/",
+    github: "https://github.com/jayvar03/Verdict",
+  },
+  {
     title: "Nex.ai — AI SaaS Platform",
     description:
       "An AI-powered SaaS platform for content generation, image creation, and smart productivity tools with authentication, premium plans, and community features.",
