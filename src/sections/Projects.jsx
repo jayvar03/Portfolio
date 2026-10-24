@@ -21,6 +21,60 @@ const projects = [
     live: "https://nexai-saas.vercel.app/",
     github: "https://github.com/jayvar03/NexAI",
   },
+  // {
+  //  title: "Spokify — AI Speech Coach",
+  //  description:
+  //     "An AI-powered speech coaching platform that provides real-time grammar correction, smart speaking insights, and fluency improvement sessions.",
+  //  tags: ["React", "Node.js", "Express", "Groq API", "Clerk", "Tailwind CSS"],
+  //  image: "/projects/spokify.png",
+  //  live: "https://spokify.vercel.app/",
+  //  github: "https://github.com/jayvar03/Spokify",
+  // },
+  {
+    title: "AgroSense — AI-Powered Agriculture",
+    description:
+      "An AI-powered agricultural platform that helps farmers make smarter farming decisions through machine learning-based crop insights and intelligent agricultural recommendations.",
+    tags: ["React", "Python", "Machine Learning", "FastAPI", "PostgreSQL"],
+    image: "/projects/agrosense.png",
+    live: "https://agrosense-crop.vercel.app/",
+    github: "https://github.com/jayvar03/AgroSense",
+  },
+  {
+  title: "Recall Space — AI Meeting Intelligence",
+  description:
+    "An AI-powered meeting intelligence platform that transforms YouTube videos and audio recordings into searchable knowledge through speech transcription, intelligent summarization, and context-aware Q&A using Retrieval-Augmented Generation (RAG).",
+  tags: [
+    "React",
+    "Python",
+    "Whisper",
+    "Sarvam AI",
+    "Mistral LLM",
+    "LangChain",
+    "ChromaDB",
+    "RAG"
+  ],
+  image: "/projects/recallspace.png",
+  live: "https://github.com/jayvar03/recall-space",
+  github: "https://github.com/jayvar03/recall-space",
+},
+  {
+  title: "SecureDocs — AI-Powered Document Intelligence",
+  description:
+    "A multi-tenant AI document assistant that enables secure, role-based document Q&A using hybrid RAG, semantic and keyword search, and source-cited responses, with strict tenant isolation to prevent unauthorized data access.",
+  tags: [
+    "React",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "pgvector",
+    "RAG",
+    "Groq API",
+    "RBAC"
+  ],
+  image: "/projects/securedocs.png",
+  live: "https://securedocs-rag.vercel.app/",
+  github: "https://github.com/jayvar03/securedocs",
+},
   {
     title: "Anomly — Anonymous Video Chat",
     description:
@@ -29,15 +83,6 @@ const projects = [
     image: "/projects/anomly.png",
     live: "https://anomly-chat.vercel.app/",
     github: "https://github.com/jayvar03/Anomly",
-  },
-  {
-   title: "Spokify — AI Speech Coach",
-   description:
-      "An AI-powered speech coaching platform that provides real-time grammar correction, smart speaking insights, and fluency improvement sessions.",
-   tags: ["React", "Node.js", "Express", "Groq API", "Clerk", "Tailwind CSS"],
-   image: "/projects/spokify.png",
-   live: "https://spokify.vercel.app/",
-   github: "https://github.com/jayvar03/Spokify",
   }
 ];
 

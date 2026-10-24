@@ -1,83 +1,115 @@
+
 import { Reveal } from "../components/Reveal";
 import { SectionHeader } from "../components/SectionHeader";
-import { Code2, Sparkles, Trophy, BookOpen } from "lucide-react";
+import {
+  Code2,
+  Sparkles,
+  Trophy,
+  GraduationCap,
+} from "lucide-react";
 
 const stats = [
-  { icon: Code2, label: "Projects Built", value: "5+" },
+  { icon: Code2, label: "Featured Projects", value: "3" },
   { icon: Sparkles, label: "Technologies", value: "10+" },
-  { icon: Trophy, label: "Leetcode Problems Solved", value: "400+" },
-  { icon: BookOpen, label: "Years Learning", value: "1+" },
+  { icon: Trophy, label: "Problems Solved", value: "450+" },
+  { icon: GraduationCap, label: "Graduation", value: "2027" },
 ];
 
 export const About = () => {
   return (
-    <section id="about" className="relative scroll-mt-24 py-32">
+    <section id="about" className="relative scroll-mt-24 py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeader label="01 / About" title="A developer who cares about the details." />
+        <SectionHeader
+          label="01 / About"
+          title="Building ideas into intelligent products."
+        />
 
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
-          <Reveal className="space-y-5 text-base leading-relaxed text-muted-foreground">
+        <div className="mt-12 grid grid-cols-1 items-center gap-10 lg:mt-16 lg:grid-cols-2 lg:gap-16">
+          {/* Left: About text */}
+          <Reveal className="w-full max-w-xl space-y-5 text-base leading-7 text-muted-foreground">
             <p>
-              I&apos;m Jay — a full stack developer dedicated to building high-performance,
-              maintainable web products. I enjoy the process of turning complex problems into
-              elegant, efficient code.
+              I&apos;m Jay, a Computer Science student specializing in
+              Artificial Intelligence, passionate about building full-stack
+              applications and AI-powered solutions.
             </p>
+
             <p>
-              My expertise spans the entire stack, from crafting responsive, accessible frontends to
-              architecting scalable backend systems. I am particularly passionate about optimization
-              and ensuring that every line of code serves a purpose.
+              From multi-agent systems and RAG pipelines to machine learning
+              applications, I enjoy turning complex problems into practical,
+              user-focused products.
             </p>
+
             <p>
-              When I&apos;m not building for the web, I focus on sharpening my algorithmic thinking.
-              With a solid foundation in Data Structures and Algorithms, I approach every challenge
-              with a logic-first mindset.
+              Outside development, I sharpen my problem-solving skills through
+              DSA and explore technologies that help me build better software.
             </p>
           </Reveal>
 
-          <Reveal delay={0.1}>
-            <div className="glass relative overflow-hidden rounded-2xl p-6">
-              <div className="flex items-center justify-between border-b border-border pb-4">
+          {/* Right: Developer profile */}
+          <Reveal delay={0.1} className="w-full min-w-0">
+            <div className="glass w-full rounded-2xl border border-border p-5 sm:p-6">
+              {/* Profile header */}
+              <div className="flex flex-wrap items-center justify-between gap-4 border-b border-border pb-5">
                 <div>
-                  <p className="font-display text-lg font-semibold text-foreground">Jay Varshney</p>
-                  <p className="font-mono text-xs text-muted-foreground">
-                    full-stack-developer.json
+                  <p className="font-display text-lg font-semibold text-foreground">
+                    Jay Varshney
+                  </p>
+
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
+                    developer-profile.json
                   </p>
                 </div>
+
                 <span className="rounded-full border border-emerald-400/20 bg-emerald-400/5 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-emerald-400">
-                  Open to work
+                  Open to opportunities
                 </span>
               </div>
 
-              <dl className="mt-5 grid grid-cols-2 gap-4 font-mono text-xs">
-                <div>
-                  <dt className="text-muted-foreground">location</dt>
-                  <dd className="mt-1 text-foreground">India</dd>
+              {/* Profile details */}
+              <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-5 font-mono text-xs sm:gap-x-6">
+                <div className="min-w-0">
+                  <dt className="text-muted-foreground">education</dt>
+                  <dd className="mt-1.5 break-words text-foreground">
+                    B.Tech CSE (AI)
+                  </dd>
                 </div>
-                <div>
+
+                <div className="min-w-0">
+                  <dt className="text-muted-foreground">graduation</dt>
+                  <dd className="mt-1.5 text-foreground">2027</dd>
+                </div>
+
+                <div className="min-w-0">
                   <dt className="text-muted-foreground">focus</dt>
-                  <dd className="mt-1 text-foreground">Web · AI · ML</dd>
+                  <dd className="mt-1.5 text-foreground">
+                    AI · Full Stack
+                  </dd>
                 </div>
-                <div>
-                  <dt className="text-muted-foreground">stack</dt>
-                  <dd className="mt-1 text-foreground">MERN</dd>
-                </div>
-                <div>
-                  <dt className="text-muted-foreground">status</dt>
-                  <dd className="mt-1 text-foreground">Building</dd>
+
+                <div className="min-w-0">
+                  <dt className="text-muted-foreground">currently</dt>
+                  <dd className="mt-1.5 text-foreground">
+                    Building & Learning
+                  </dd>
                 </div>
               </dl>
 
+              {/* Stats */}
               <div className="mt-6 grid grid-cols-2 gap-3">
-                {stats.map((s) => (
+                {stats.map((stat) => (
                   <div
-                    key={s.label}
-                    className="hover-lift rounded-xl border border-border bg-surface-2/40 p-4"
+                    key={stat.label}
+                    className="hover-lift min-w-0 rounded-xl border border-border bg-surface-2/40 p-4 transition-colors hover:border-accent/30 sm:p-5"
                   >
-                    <s.icon className="h-4 w-4 text-accent" />
+                    <stat.icon className="h-4 w-4 text-accent" />
+
                     <p className="mt-3 font-display text-2xl font-semibold text-foreground">
-                      {s.value}
+                      {stat.value}
                     </p>
-                    <p className="mt-0.5 text-xs text-muted-foreground">{s.label}</p>
+
+                    <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                      {stat.label}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -87,5 +119,4 @@ export const About = () => {
       </div>
     </section>
   );
-}
-
+};
